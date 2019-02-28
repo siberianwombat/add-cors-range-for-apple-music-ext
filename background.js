@@ -1,7 +1,7 @@
 const requestFilter = {
 	urls: ['https://*.itunes.apple.com/*']
 }
-const UrlReg = new RegExp('\.mp4$', 'i');
+const UrlReg = new RegExp(/\.mp4$/, 'i');
 
 chrome.webRequest.onHeadersReceived.addListener(
     function(dt) {
